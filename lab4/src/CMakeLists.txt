@@ -1,0 +1,18 @@
+idf_component_register(
+    SRCS
+        "main.c"
+        "i2c_master.c"
+        "lcd_i2c.c"
+        "ds1307.c"
+        "rc522.c"
+        "ble_nus.c"
+    INCLUDE_DIRS
+        "."
+        "../include"
+    REQUIRES
+        driver
+        nvs_flash
+        bt
+        esp_event
+        esp_log
+)
